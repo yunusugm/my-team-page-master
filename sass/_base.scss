@@ -1,0 +1,39 @@
+$bp-large: 68.75em; //1100px
+$bp-small: 43.75em; //700px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  @media only screen and(max-width: 56.25em) {
+    font-size: 81.25%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 100%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  max-width: 80vw;
+  margin: auto;
+  padding: 2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  min-height: 100vh;
+
+  @media only screen and (max-width: $bp-small) {
+    max-width: 100%;
+    padding: 2rem;
+  }
+}

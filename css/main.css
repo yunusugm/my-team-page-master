@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 81.25%;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  max-width: 80vw;
+  margin: auto;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-content: center;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 43.75em) {
+  body {
+    max-width: 100%;
+    padding: 2rem;
+  }
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content 1fr;
+      grid-template-columns: -webkit-max-content 1fr;
+      grid-template-columns: max-content 1fr;
+  -webkit-column-gap: 40%;
+          column-gap: 40%;
+  margin-bottom: 6rem;
+}
+
+@media only screen and (max-width: 68.75em) {
+  .header {
+    -webkit-column-gap: 15rem;
+            column-gap: 15rem;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .header {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-bottom: 2.375rem;
+  }
+}
+
+.header__explanation {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.heading {
+  line-height: 1;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .heading {
+    margin-bottom: 2.375rem;
+  }
+}
+
+.sub-heading {
+  text-transform: uppercase;
+  margin-bottom: 0.625rem;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  place-items: center;
+  place-content: center;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .main {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.94rem;
+}
+
+.team__img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin-right: 0.63rem;
+}
+
+.team__role {
+  font-family: "PT Serif", serif;
+  font-size: 0.75rem;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .lu,
+  .stan {
+    margin-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .griff {
+    margin-top: 0 !important;
+  }
+}
+
+.footer {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fc8080;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+/*# sourceMappingURL=main.css.map */
